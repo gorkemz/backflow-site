@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Backflow</title>
+<meta name="description" content="What Backflow stores, where it is stored, and who can reach it.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+  NOT LEGAL ADVICE. This page was written from the app's actual source code so
+  that every statement below is verifiable, but it has NOT been reviewed by a
+  lawyer. Have counsel review it before the App Store submission, and again if
+  the app ever gains a server, an account system, or a third-party SDK.
+
+  Two placeholders a lawyer or the publisher must settle:
+    1. The legal entity name of the publisher (this page says "we" and gives a
+       contact address instead of naming an entity).
+    2. Whether a governing-law / data-transfer section is required for the
+       markets this app is sold in.
+-->
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Back<span>flow</span></a>
+    <nav class="site">
+      <a href="index.html">Home</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: 30 August 2026 &middot; Applies to the Backflow iOS app.</p>
+
+<div class="card">
+  <span class="pill">The short version</span>
+  <ul>
+    <li>Backflow has <strong>no account and no server of ours</strong>. There is nothing to sign up for.</li>
+    <li>Your testers, customers, sites, assemblies, reports and signatures are stored <strong>on your iPhone</strong>, and&mdash;if you are signed in to iCloud&mdash;in <strong>your own private iCloud database</strong>.</li>
+    <li>We cannot read your reports, your customer list, or your signature. We have no way to.</li>
+    <li>One third party is involved, and only for purchases: <strong>RevenueCat</strong>, which checks your App Store receipt using an anonymous ID it generates for your device.</li>
+    <li>Nothing is sold, rented, or used for advertising. The app does no tracking and contains no ad or third-party analytics SDK.</li>
+  </ul>
+</div>
+
+<h2>1. Who this policy is from</h2>
+<p>
+  &ldquo;We&rdquo; and &ldquo;us&rdquo; mean the developer and publisher of the Backflow iOS app.
+  You can reach us at <a href="mailto:mail@gorkemerbektas.com">mail@gorkemerbektas.com</a>.
+  &ldquo;You&rdquo; means the person using the app&mdash;typically a certified backflow prevention
+  assembly tester.
+</p>
+
+<h2>2. What the app stores</h2>
+<p>
+  Backflow is a record-keeping tool, so it necessarily holds detailed records. Everything
+  in the table below is entered by you and stays under your control. It is stored on your
+  device, not sent to us.
+</p>
+
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr><th>Record</th><th>Fields it can contain</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tester profile</td>
+      <td>Name, certification number, certification expiry date, company name, phone, email, and a drawn signature image</td>
+    </tr>
+    <tr>
+      <td>Test gauges</td>
+      <td>Serial number, manufacturer, model, last calibration date, calibration interval</td>
+    </tr>
+    <tr>
+      <td>Water purveyors</td>
+      <td>Name, state, submission email address, portal URL, form identifier, notes</td>
+    </tr>
+    <tr>
+      <td>Sites (your customers)</td>
+      <td>Site name, street address, city, state, postal code, contact name, contact phone, contact email, notes</td>
+    </tr>
+    <tr>
+      <td>Assemblies</td>
+      <td>Type, manufacturer, model, serial number, size, location description, hazard class, install date, test interval</td>
+    </tr>
+    <tr>
+      <td>Test reports</td>
+      <td>Test date, gauge readings, checklist answers, pass/fail result, repair notes, remarks, a snapshot of the tester name, certification number and gauge serial as they were on the test date, submission method and date, the customer&rsquo;s drawn signature, and a copy of the generated PDF</td>
+    </tr>
+    <tr>
+      <td>App settings</td>
+      <td>Small preference values kept in the app&rsquo;s own settings store, such as onboarding progress and cached subscription state</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="card important">
+  <h3>A note about your customers&rsquo; information</h3>
+  <p>
+    Much of what you type into Backflow is other people&rsquo;s information&mdash;site contacts,
+    phone numbers, addresses. We never receive it, which also means we cannot manage it on
+    your behalf. Where rules apply to the handling of that information, meeting them is
+    your responsibility as the person who collected it.
+  </p>
+</div>
+
+<h2>3. Where it is stored</h2>
+<h3>On your device</h3>
+<p>
+  Records live in the app&rsquo;s private storage area inside the iOS app sandbox. Larger
+  items&mdash;signature images and generated report PDFs&mdash;may be written by the storage
+  framework as separate files in the same sandbox. The app also writes a rolling
+  local backup: after saves, a complete JSON snapshot of your records is written to the
+  app&rsquo;s Application Support folder, and the <strong>ten most recent snapshots</strong> are kept
+  while older ones are deleted. These snapshots exist so a mistaken bulk delete or a bad
+  upgrade is recoverable. They never leave the device on their own.
+</p>
+<p>
+  Deleting the app from your iPhone removes this on-device storage, including the
+  snapshots. <strong>Export first if you want to keep your records.</strong>
+</p>
+
+<h3>In your own iCloud account</h3>
+<p>
+  When you are signed in to iCloud, iOS syncs the app&rsquo;s records through Apple&rsquo;s CloudKit
+  into the <strong>private database</strong> of the iCloud container
+  <code>iCloud.com.gelirmotoru.backflow</code>, under <strong>your</strong> Apple Account. That is
+  what makes your records appear on your other devices and survive a lost phone.
+</p>
+<p>
+  This is worth being precise about, because it is the part people most often assume works
+  the other way round:
+</p>
+<ul>
+  <li>The data goes to <strong>your</strong> iCloud storage, not to a server we operate. We do not
+      run one.</li>
+  <li>The private database is not visible to us. We have no administrative view of it, no
+      key to it, and no ability to query it. We cannot retrieve your records for you, even
+      if you ask.</li>
+  <li>While it is in iCloud, the data is handled under Apple&rsquo;s terms and privacy policy
+      for iCloud.</li>
+  <li>Deleting the app does <strong>not</strong> necessarily remove the iCloud copy. You can manage
+      or remove app data stored in iCloud from the iOS Settings app, under your Apple
+      Account&rsquo;s iCloud storage settings.</li>
+  <li>Signing out of iCloud, or turning iCloud Drive off for the app, stops the sync. The
+      records already on the device stay on the device.</li>
+</ul>
+
+<h2>4. Analytics</h2>
+<p>
+  Backflow does not use a third-party analytics service. There is no Firebase, no
+  Amplitude, no Mixpanel, no PostHog, and no equivalent in the app.
+</p>
+<p>
+  What the app calls &ldquo;analytics&rdquo; internally is a set of counters written to the
+  <strong>device&rsquo;s own system log</strong> using Apple&rsquo;s logging framework. Those lines are
+  visible to you on your own Mac if you attach the device to Console, and to no one else.
+  <strong>They are not transmitted anywhere.</strong> The app makes no network request to send them.
+</p>
+<p>The events are structural, not personal. In full, they record:</p>
+<ul>
+  <li>which onboarding step was reached,</li>
+  <li>that the subscription screen was shown, and from where,</li>
+  <li>that a trial or purchase was started, and for which product identifier,</li>
+  <li>that a named feature was used,</li>
+  <li>counts&mdash;how many items a screen was showing.</li>
+</ul>
+<p>
+  No names, no addresses, no readings, no report contents, and no device or advertising
+  identifier are part of these events.
+</p>
+
+<h2>5. Purchases and RevenueCat</h2>
+<p>
+  Subscriptions are sold by Apple through the App Store. We never see your payment
+  details, your card, or your Apple Account credentials&mdash;Apple does not share them with
+  developers.
+</p>
+<p>
+  To work out whether a subscription is active, the app uses
+  <strong>RevenueCat</strong>, a subscription infrastructure provider. This is the one place
+  where data leaves your device to a party other than Apple, so here is exactly what
+  happens:
+</p>
+<ul>
+  <li>The RevenueCat SDK is initialised when the app launches.</li>
+  <li>We do <strong>not</strong> give it an identity for you. Because no user ID is supplied,
+      RevenueCat generates an <strong>anonymous app user ID</strong> of its own and stores it on
+      the device. It is a random identifier, not derived from your name, email, or Apple
+      Account.</li>
+  <li>That anonymous ID, your App Store purchase receipt, and technical metadata about the
+      device and store are sent to RevenueCat so it can answer one question: is the
+      subscription entitlement active?</li>
+  <li>If you reinstall the app or reset the device, a new anonymous ID is usually
+      generated. Restoring purchases works from the App Store receipt, not from anything
+      we hold.</li>
+  <li>We see aggregate subscription figures. We do not see who you are.</li>
+</ul>
+<p>
+  RevenueCat processes this data as our service provider, under its own privacy policy at
+  <a href="https://www.revenuecat.com/privacy/" rel="noopener">revenuecat.com/privacy</a>.
+</p>
+
+<h2>6. Notifications</h2>
+<p>
+  Backflow can remind you about assembly retest dates, gauge calibration expiry, and your
+  own certification expiry. These are <strong>local notifications</strong>, scheduled by the app on
+  your device from records already on your device. There is no push server, and nothing
+  about your schedule is sent anywhere to produce them.
+</p>
+<p>
+  Reminder text can include a site or assembly name, so it may appear on your lock screen.
+  You can change that in iOS Settings, or decline notification permission altogether&mdash;the
+  rest of the app works without it.
+</p>
+
+<h2>7. Exporting and sharing</h2>
+<p>
+  You can export a complete JSON archive, a CSV of your reports, or a PDF of an individual
+  report, at any time, using the iOS share sheet. <strong>Export is free and is not restricted
+  by a subscription.</strong>
+</p>
+<p>
+  One limitation worth knowing before you rely on the archive as a backup: the JSON archive
+  contains your records&mdash;testers, gauges, purveyors, sites, assemblies and reports&mdash;but
+  it does <strong>not</strong> include the drawn signature images or the stored copies of
+  generated PDFs. Export the PDFs you need to keep separately.
+</p>
+<p>
+  When you share a file, it goes wherever you send it&mdash;Mail, Files, a purveyor&rsquo;s portal,
+  a messaging app. That destination is your choice, and from that point the receiving
+  service&rsquo;s handling applies, not ours. Email addresses shown in the app open your own
+  mail app with a pre-filled message; nothing is sent until you send it.
+</p>
+
+<h2>8. What the app does not do</h2>
+<ul>
+  <li>No account, no sign-up, no password, no login of ours.</li>
+  <li>No access to your location, camera, photo library, contacts, calendar, microphone, or
+      health data. The app does not ask for these permissions because it does not use them.</li>
+  <li>No advertising, no ad SDK, no advertising identifier, no cross-app or cross-site
+      tracking. The app&rsquo;s privacy manifest declares tracking as disabled and lists no
+      tracking domains.</li>
+  <li>No selling, renting, or sharing of your data with data brokers. There is no data to
+      sell: we do not hold it.</li>
+  <li>No profiling and no automated decision-making about you.</li>
+</ul>
+
+<h2>9. What the App Store privacy label reflects</h2>
+<p>The app&rsquo;s privacy manifest declares two collected data types, both tied to purchases:</p>
+<ul>
+  <li><strong>Purchase history</strong> &mdash; not linked to your identity, not used for tracking;
+      used for app functionality and to understand subscription performance in aggregate.</li>
+  <li><strong>User ID</strong> &mdash; the anonymous RevenueCat identifier described in section 5;
+      not linked to your identity, not used for tracking, used for app functionality.</li>
+</ul>
+<p>
+  The manifest also declares access to the standard iOS preferences store, used only for
+  the app&rsquo;s own settings.
+</p>
+
+<h2>10. Retention</h2>
+<p>
+  Your records stay until you delete them. We do not expire, archive, or remove them,
+  because we do not hold them. Local snapshots roll over automatically at ten. Purchase
+  records held by Apple and RevenueCat are retained under their own policies.
+</p>
+
+<h2>11. Your controls</h2>
+<ul>
+  <li><strong>Stop syncing:</strong> turn iCloud Drive off for Backflow, or sign out of iCloud,
+      in iOS Settings.</li>
+  <li><strong>Remove the iCloud copy:</strong> manage app data in your Apple Account&rsquo;s iCloud
+      storage settings.</li>
+  <li><strong>Delete records:</strong> delete individual sites, assemblies, or reports in the app.</li>
+  <li><strong>Take your data with you:</strong> export JSON or CSV at any time, at no cost.</li>
+  <li><strong>Remove everything local:</strong> delete the app.</li>
+  <li><strong>Turn off reminders:</strong> decline or revoke notification permission in iOS Settings.</li>
+</ul>
+<p>
+  If you have a question about your data that these controls do not answer, write to
+  <a href="mailto:mail@gorkemerbektas.com">mail@gorkemerbektas.com</a>. Please note the honest
+  limit: for anything stored only on your device or in your private iCloud database, we can
+  explain and advise, but we cannot access, retrieve, or delete it for you.
+</p>
+
+<h2>12. Children</h2>
+<p>
+  Backflow is a professional tool for certified testers. It is not directed to children and
+  is not intended for their use.
+</p>
+
+<h2>13. Changes to this policy</h2>
+<p>
+  If the app changes in a way that changes this policy&mdash;for example, if it ever gains a
+  server, an account, or a new third-party service&mdash;this page will be updated and the
+  date at the top will change. Material changes will also be noted in the app&rsquo;s release
+  notes.
+</p>
+
+<h2>14. Contact</h2>
+<p>
+  Questions about privacy: <a href="mailto:mail@gorkemerbektas.com">mail@gorkemerbektas.com</a>.
+</p>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>
+      Backflow &middot;
+      <a href="index.html">Home</a> &middot;
+      <a href="privacy.html">Privacy</a> &middot;
+      <a href="terms.html">Terms</a> &middot;
+      <a href="support.html">Support</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

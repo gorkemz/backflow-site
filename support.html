@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Backflow</title>
+<meta name="description" content="How to get help with Backflow, and what we can and cannot do for you.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Back<span>flow</span></a>
+    <nav class="site">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="support.html" aria-current="page">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+<h1>Support</h1>
+<p class="updated">Last updated: 30 August 2026</p>
+
+<div class="card">
+  <span class="pill">Contact</span>
+  <p style="font-size:1.15rem;margin-top:0.25rem;">
+    <a href="mailto:mail@gorkemerbektas.com">mail@gorkemerbektas.com</a>
+  </p>
+  <p>
+    One person reads this address. We aim to reply within a few business days. Email is the
+    only support channel&mdash;there is no phone line and no chat, and we would rather say so
+    than have you wait for one.
+  </p>
+</div>
+
+<h2>What to include</h2>
+<p>
+  Because of how the app is built, we <strong>cannot see your data</strong>&mdash;not your reports,
+  not your customers, not your device. Everything we know about a problem has to come from
+  your message. The more of this you can include, the faster it gets fixed:
+</p>
+<ul>
+  <li>What you were doing, step by step, right before it went wrong.</li>
+  <li>What you expected to happen, and what happened instead.</li>
+  <li>The app version and your iOS version (Settings &rsaquo; General &rsaquo; About).</li>
+  <li>Your iPhone model.</li>
+  <li>A screenshot, if there is something to see. Blank out customer details first if you
+      would rather not send them&mdash;we do not need them to reproduce most bugs.</li>
+</ul>
+<p>
+  The app&rsquo;s built-in &ldquo;contact support&rdquo; links open your mail app with some of this
+  already filled in.
+</p>
+
+<h2>What we can help with</h2>
+<ul class="features">
+  <li><strong>Bugs and crashes.</strong> Wrong results, a screen that will not load, a PDF that
+      comes out wrong, a reminder that did not fire.</li>
+  <li><strong>Getting your data out.</strong> How to export a full JSON archive, a CSV of your
+      reports, or a single report PDF. Export is free and is not behind a subscription.</li>
+  <li><strong>Recovering from a mistake.</strong> The app keeps the ten most recent local
+      snapshots of your records. If you deleted something you should not have, write before
+      you keep working&mdash;new saves roll older snapshots off the end.</li>
+  <li><strong>Sync questions.</strong> Why records are or are not appearing on a second device.</li>
+  <li><strong>Report and form questions.</strong> What a field means, or why a value is calculated
+      the way it is.</li>
+  <li><strong>Feature requests.</strong> Genuinely wanted. Tell us what the job is, not just the
+      feature&mdash;the underlying problem is usually the useful part.</li>
+</ul>
+
+<h2>What we cannot do</h2>
+<ul>
+  <li><strong>We cannot retrieve your records.</strong> They are on your device and, if iCloud is
+      on, in your own private iCloud database. We have no copy, no access, and no
+      administrative view. This is deliberate&mdash;see the
+      <a href="privacy.html">Privacy Policy</a>&mdash;but it means data recovery has to happen
+      on your end, and we can only guide you through it.</li>
+  <li><strong>We cannot issue refunds.</strong> App Store purchases are refunded by Apple. Use
+      <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a>.
+      Tell us anyway if something was broken.</li>
+  <li><strong>We cannot cancel your subscription.</strong> Do it in Settings &rsaquo; your Apple
+      Account &rsaquo; Subscriptions.</li>
+  <li><strong>We cannot tell you whether a test passed.</strong> The app calculates a suggested
+      result from the readings you enter; the determination and the signature are yours.
+      See section 2 of the <a href="terms.html">Terms of Use</a>.</li>
+  <li><strong>We cannot advise on code or regulation.</strong> What your state or water purveyor
+      requires is between you, your certifying authority, and them.</li>
+</ul>
+
+<h2>Common questions</h2>
+
+<h3>Where is my data kept?</h3>
+<p>
+  On your iPhone. If you are signed in to iCloud, iOS also syncs it to the private database
+  in your own Apple Account, which is how it reaches your other devices. There is no
+  account with us and no server of ours involved.
+</p>
+
+<h3>Do I need an internet connection?</h3>
+<p>
+  Not to record a test. Entering readings, calculating a result, and producing a PDF all
+  work offline&mdash;which matters in a mechanical room. A connection is needed for iCloud
+  sync to catch up and for subscription status to refresh.
+</p>
+
+<h3>How do I back up my records?</h3>
+<p>
+  Export a JSON archive from the sharing screen and keep it somewhere you control. The app
+  also writes rolling local snapshots automatically, but those live on the same device, so
+  they do not help if the phone does.
+</p>
+<p>
+  One caveat: the JSON archive carries your records, but not the drawn signature images or
+  the stored copies of generated PDFs. If a signed PDF matters to you, export that report&rsquo;s
+  PDF as well.
+</p>
+
+<h3>I deleted the app. Is my data gone?</h3>
+<p>
+  The on-device copy, including local snapshots, is removed with the app. If iCloud sync was
+  on, a copy may still be in your iCloud account and can come back when you reinstall.
+  Do not rely on that&mdash;export before deleting.
+</p>
+
+<h3>The app opened on a recovery screen. What now?</h3>
+<p>
+  That screen appears when the app could not open its stored records. It is deliberate: the
+  app refuses to start over with an empty database, because that is how records get quietly
+  lost. Your file is left untouched on disk. Do not delete the app&mdash;write to us, and
+  include what the screen says.
+</p>
+
+<h3>Why did a reminder not arrive?</h3>
+<p>
+  First check that notifications are allowed for Backflow in iOS Settings, and that Focus or
+  a Sleep schedule is not silencing them. Reminders are scheduled locally on your device, so
+  they do not depend on a connection. If permissions look right and reminders are still
+  missing, tell us which date you expected.
+</p>
+
+<h3>How do I cancel or get a refund?</h3>
+<p>
+  Cancel in Settings &rsaquo; your Apple Account &rsaquo; Subscriptions. Refunds go through
+  <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a>.
+  Deleting the app does not cancel a subscription.
+</p>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>
+      Backflow &middot;
+      <a href="index.html">Home</a> &middot;
+      <a href="privacy.html">Privacy</a> &middot;
+      <a href="terms.html">Terms</a> &middot;
+      <a href="support.html">Support</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
